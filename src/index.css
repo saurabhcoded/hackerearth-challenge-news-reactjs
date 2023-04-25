@@ -1,13 +1,32 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: initial;
+  text-decoration: initial !important;
+}
+.news-card {
+  box-shadow: inset 0 0 0 2000px rgba(128, 128, 128, 0.534) !important;
+  border: 2px solid rgb(255, 255, 255);
+}
+.news-card:hover {
+  border: 2px solid rgb(255, 72, 0);
+}
+
+.news-card .overlay-hover {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+.news-card:hover .overlay-hover {
+  visibility: visible;
+  height: initial;
+  width: initial;
+  padding: initial;
+  margin: initial;
+  transition: 0.5s;
 }
